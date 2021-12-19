@@ -420,14 +420,50 @@ Existen varias formas de solucionar esto para poder aceptar contribuciones. Una 
 Solo debemos entrar a la configuración de colaboradores de nuestro proyecto (Repositorio > Settings > Collaborators) y añadir el email o username de los nuevos colaboradores.
 
 #26
+Flujo de trabajo profesional: Haciendo merge de ramas de desarrollo a master.
+
+#27
 Flujo de trabajo profesional con Pull requests.
 
 En un entorno profesional normalmente se bloquea la rama master, y para enviar código a dicha rama pasa por un code review y luego de su aprobación se unen códigos con los llamados merge request.
 
 Para realizar pruebas enviamos el código a servidores que normalmente los llamamos staging develop (servidores de pruebas) luego de que se realizan las pruebas pertinentes tanto de código como de la aplicación estos pasan a el servidor de producción con el ya antes mencionado merge request.
 
-#27
+#28
 Utilizando Pull Requests en GitHub.
 
-        
+#29
+Creando un Fork, contribuyendo a un repositorio
+
+#30
+Haciendo deployment a un servidor.
+
+En esta clase veremos como hacer deploy de nuestra aplicación utilizando un servidor.
+
+No te preocupes si no has comprado un servidor, no es necesario, puedes instalar un servidor local en tu computadora para realizar pruebas y testear tu aplicación.
+
+#31
+Hazme un pull request
+
+Queremos que uses las habilidades ya aprendidas para aplicarlas en esta clase. Haz un fork de el repositorio de GitHub y realiza las tareas que te indicaremos en esta clase. Ojo, debes seguir las reglas e instrucciones que se dieron en el video.
+
+Regla a seguir:
+
+Dentro del ID “post” luego de “suscribete y dale like” agrega otra línea o párrafo con tu nombre o tu nombre de usuario en Platzi.
+
+#32
+Ignorar archivos en el repositorio con .gitignore.
+
+No todos los archivos que agregas a un proyecto deberían ir a un repositorio, por ejemplo cuando tienes un archivo donde están tus contraseñas que comúnmente tienen la extensión .env o cuando te estás conectando a una base de datos; son archivos que nadie debe ver.
+
+#35
+Git Rebase: reorganizando el trabajo realizado.
+
+El comando rebase es una mala práctica, nunca se debe usar, pero para efectos del curso te lo vamos a enseñar para que hagas tus propios experimentos. Con rebase puedes recoger todos los cambios confirmados en una rama y ponerlos sobre otra.
+
+# Cambiamos a la rama que queremos traer los cambios
+git checkout experiment
+# Aplicamos rebase para traer los cambios de la rama que queremos 
+git rebase master
+
 
